@@ -2,7 +2,7 @@ import css from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 export const FriendListItem = ({ id, name, avatar, isOnline }) => {
   return (
-    <li key={id} className={css.item}>
+    <li className={css.item}>
       <span
         className={`${css.status}  ${isOnline ? css.online : css.offline}`}
       ></span>
